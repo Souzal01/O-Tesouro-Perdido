@@ -1,0 +1,90 @@
+# O-Tesouro-Perdido
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>O Tesouro Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Em um dia visitando uma loja de antiguidades, eu achei um mapa com pistas de um tesouro em um dos objetos da loja e resolvi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Bahia</button>
+            <button class="btn-proximo" data-proximo="2">Tocantins</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>O mapa te orienta ir até Salvador.</p>
+            <button class="btn-proximo" data-proximo="3"> Continuar e seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="4">desistir do caça ao tesouro</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em Tocantins, você passeia pela cidade de Palmas, onde encontra uma das pistas indicando para explorar os pontos turísticos da região. Em qual você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Parque Cesamar</button>
+            <button class="btn-proximo" data-proximo="6">Ilha do Canela</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Em Salvador, no local mais conhecido da cidade, Pelourinho, você encontra pontos históricos indicando que o tesouro está em Piauí.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Piauí</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você desistiu de continuar a busca pelo tesouro e foi
+                embora.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No Parque Cesamar, em uma área mais afastada, você encontra um mapa indicando que a próxima
+                pista está em Piauí.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Piauí</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Na Ilha do Canela, você não encontrou nenhuma pista.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e ir para o parque</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Em Piauí, você vai a procura de mais pistas e encontra uma cachoeira com uma caverna.</p>
+            <button class="btn-proximo" data-proximo="9">Entrar na caverna</button>
+            <button class="btn-proximo" data-proximo="10">Procurar ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao parque, você encontra o mapa indicando a próxima pista ao Piauí!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Piauí</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Dentro da caverna, você encontra o tesouro e registros
+                de antigamente.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o tesouro</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Na cachoeira, apesar de ser um lugar bonito, você não encontra
+                nada.</p>
+            <button class="btn-proximo" data-proximo="12">Ir para a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Explorando o tesouro perdido, você decide que irá estudar e descobrir de onde
+                ele vem.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando para a caverna, você encontra 
+                o tesouro.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o tesouro perdido</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
